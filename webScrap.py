@@ -33,7 +33,7 @@ def get_matches(year):
     df_soccer['year'] = year
     
     return df_soccer
-
+print(get_matches(1982))
 # Lista de comprencion
 #fifa = [get_matches(year) for year in years]
 
@@ -44,36 +44,37 @@ def get_matches(year):
 # indix=false, para no importar en el dataframe el index inicial
 #df_fifa.to_csv('fifa_worldCup_historical.csv', index=False)
 
-# Datos anteriores al mundial 2022
-def get_matches_2022(year):
-    web = f'https://web.archive.org/web/20221115040351/https://en.wikipedia.org/wiki/{year}_FIFA_World_Cup'
-    #Mandar solicitud
-    response = requests.get(web)
-    #respuesta en formtato html
-    content = response.text
-    # permite leer el texto de content
-    soup = BeautifulSoup(content, 'lxml')
 
-    # inspecciono la pagina y encuentro que el tag que necesito es div y la clase se llama footballbox
-    matches = soup.find_all('div', class_='footballbox')
-    # creamos la variable de la lista
-    home = []
-    score = []
-    away = []
-    # extraemos unicamente el equipo local, visitante y marcador
-    for match in matches:
-        home.append(match.find('th',class_='fhome').get_text())
-        score.append(match.find('th',class_='fscore').get_text())
-        away.append(match.find('th',class_='faway').get_text())
+# # Datos anteriores al mundial 2022
+# def get_matches_2022(year):
+#     web = f'https://web.archive.org/web/20221115040351/https://en.wikipedia.org/wiki/{year}_FIFA_World_Cup'
+#     #Mandar solicitud
+#     response = requests.get(web)
+#     #respuesta en formtato html
+#     content = response.text
+#     # permite leer el texto de content
+#     soup = BeautifulSoup(content, 'lxml')
 
-    dict_soccer = {'home':home, 'score':score, 'away':away }
-    df_soccer = pd.DataFrame(dict_soccer)
-    df_soccer['year'] = year
+#     # inspecciono la pagina y encuentro que el tag que necesito es div y la clase se llama footballbox
+#     matches = soup.find_all('div', class_='footballbox')
+#     # creamos la variable de la lista
+#     home = []
+#     score = []
+#     away = []
+#     # extraemos unicamente el equipo local, visitante y marcador
+#     for match in matches:
+#         home.append(match.find('th',class_='fhome').get_text())
+#         score.append(match.find('th',class_='fscore').get_text())
+#         away.append(match.find('th',class_='faway').get_text())
+
+#     dict_soccer = {'home':home, 'score':score, 'away':away }
+#     df_soccer = pd.DataFrame(dict_soccer)
+#     df_soccer['year'] = year
     
-    return df_soccer
+#     return df_soccer
 
-df_fixture = get_matches_2022(2022)
-print(df_fixture)
-df_fixture.to_csv('fifa_fixture_2022_.csv', index=False)
+# df_fixture = get_matches_2022(2022)
+# print(df_fixture)
+# df_fixture.to_csv('fifa_fixture_2022_.csv', index=False)
 
 
