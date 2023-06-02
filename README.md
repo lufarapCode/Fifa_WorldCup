@@ -6,6 +6,7 @@ Applying web scraping techniques to extract data from a webpage using **Python**
 
 **Pandas** is a Python library used to perform various data cleaning techniques in a data science environment such as **Anaconda** and development environments like **Jupyter Notebooks**
 
+![img](https://github.com/lufarapCode/lufarapCode/tree/main/img/img2.PNG)
 
 # Fifa_WorldCup
 
