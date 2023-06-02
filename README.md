@@ -2,7 +2,7 @@
 
 Applying web scraping techniques to extract data from a webpage using **Python** and the **BeautifulSoup** library.
 
-![img](https://github.com/lufarapCode/lufarapCode/blob/main/img/imag1.PNG)
+![img](https://github.com/lufarapCode/lufarapCode/blob/main/img/img1.PNG)
 
 **Pandas** is a Python library used to perform various data cleaning techniques in a data science environment such as **Anaconda** and development environments like **Jupyter Notebooks**
 
