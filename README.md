@@ -18,13 +18,13 @@ The extracted data is then subjected to data cleaning techniques using Pandas in
 Once the data is cleaned, it is exported to a CSV file for further implementation of the corresponding predictive analysis
 ```
 
-# Run proyect 
+# run a project 
 ```
 git clone
 cd fifa
 crear el ambiente virtual
-python3 -m venv #nombre del ambiente virtual
-soure ambienteVirtual01/bin/activate
+python3 -m venv #nombreDelAmbienteVirtual
+soure #nombreDelAmbienteVirtual/bin/activate
 pip3 install -r requirements.txt
 python3 webScrap.py
 ```
