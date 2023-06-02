@@ -1,13 +1,22 @@
+# Data extraction and cleansing with Python
+
+Applying web scraping techniques to extract data from a webpage using **Python** and the **BeautifulSoup** library.
+
+<div align="center">
+  <img align='center' src="img/img1.png" height="" width="1000" alt="snake">
+</div>
+
+**Pandas** is a Python library used to perform various data cleaning techniques in a data science environment such as **Anaconda** and development environments like **Jupyter Notebooks**
+
+
 # Fifa_WorldCup
 
 ```
-En este proyecto se realiza la extraccion de datos de todos los partidos de los mundiales 
-de futbol utilizando Web Scraping, con la libreria BeautifulSoup
+In this project, data extraction is performed on all the matches of the FIFA World Cup using web scraping with the BeautifulSoup library.
 
-Con los datos extraidos se utiliza tecnicas de limpieza de datos con pandas en jupyter notebooks
+The extracted data is then subjected to data cleaning techniques using Pandas in Jupyter Notebooks.
 
-Con la data limpia se extrae a un archivo csv
-
+Once the data is cleaned, it is exported to a CSV file for further implementation of the corresponding predictive analysis
 ```
 
 # Para ejecuta el proyecto
