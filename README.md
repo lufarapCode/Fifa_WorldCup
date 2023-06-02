@@ -18,7 +18,7 @@ The extracted data is then subjected to data cleaning techniques using Pandas in
 Once the data is cleaned, it is exported to a CSV file for further implementation of the corresponding predictive analysis
 ```
 
-# Para ejecuta el proyecto
+# Run proyect 
 ```
 git clone
 cd fifa
